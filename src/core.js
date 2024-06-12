@@ -4,7 +4,7 @@ function createPixelArray(imgData, pixelCount, quality) {
 
 	for (let a, b, g, i = 0, offset, r; i < pixelCount; i = i + quality) {
 		offset = i * 4;
-		r = pixels[offset + 0];
+		r = pixels[offset];
 		g = pixels[offset + 1];
 		b = pixels[offset + 2];
 		a = pixels[offset + 3];

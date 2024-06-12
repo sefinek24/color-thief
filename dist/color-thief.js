@@ -1,6 +1,6 @@
 const { getPixels } = require('ndarray-pixels');
 const quantize = require('@lokesh.dhakar/quantize');
-const fs = require('fs').promises;
+const fs = require('fs/promises');
 
 async function createPixelArray(imgData, pixelCount, quality) {
 	const pixelArray = [];
