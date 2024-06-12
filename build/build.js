@@ -1,4 +1,4 @@
-var fs = require('fs');
+const fs = require('fs');
 const { resolve } = require('path');
 
 /*
@@ -21,8 +21,8 @@ const umdPath = resolve(process.cwd(), umdRelPath);
 const legacyPath = resolve(process.cwd(), legacyRelPath);
 
 fs.copyFile(umdPath, legacyPath, (err) => {
-    if (err) throw err;
-    console.log(`${umdRelPath} copied to ${legacyRelPath}.`);
+	if (err) throw err;
+	console.log(`${umdRelPath} copied to ${legacyRelPath}.`);
 });
 
 const srcNodeRelPath = 'src/color-thief-node.js';
@@ -31,6 +31,6 @@ const srcNodePath = resolve(process.cwd(), srcNodeRelPath);
 const distNodePath = resolve(process.cwd(), distNodeRelPath);
 
 fs.copyFile(srcNodePath, distNodePath, (err) => {
-    if (err) throw err;
-    console.log(`${srcNodeRelPath} copied to ${distNodeRelPath}.`);
+	if (err) throw err;
+	console.log(`${srcNodeRelPath} copied to ${distNodeRelPath}.`);
 });
