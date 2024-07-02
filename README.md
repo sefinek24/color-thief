@@ -55,5 +55,5 @@ To run just the Node tests:
 - Update version number in `src/color-thief.js` and `package.json`
 - Run `npm run build`
 - Commit and push built files back up to `master`
-- Create a new Github release along with tag. Naming convention for both ```v2.8.1```
+- Create a new GitHub release along with tag. Naming convention for both ```v2.8.1```
 - `npm publish`
